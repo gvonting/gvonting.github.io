@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+	<head>
+	<title>How I Made This Website</title>
+	<meta name="description" contents="Quick Explanation of How and Why I Made This Website">
+	<meta name="viewport" content="width=device-width; initial-scale=0.80;">
+	<link rel="stylesheet" type="text/css" href="/static/styles.css?q=1623604661"/>
+	</head>
+	
+	<body>
+	<header class="main-header">
+		<nav class="nav main-nav">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="blog">Blog</a></li>
+				<li><a href="about">About</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="content-section container">
+		<h1>How I Made This Website</h1>
+		<span><strong>By: Garrett von Ting | Published: 2021-06-13</strong></span>
+		<hr />
+		<hr />
+		<hr />
+		<p class="container"><p>I wanted to create a personal website for a long time and started to look into it more seriously when this last semester ended and summer started. The platform I was searching for needed to be cost effective and simple. Wordpress seemed like the obvious choice because it was free and known for being simple to set up blogs, but the need to add all these plug-ins and extra features to have anything beyond the most basic website didn't sit well with me. I didn't want to rely on all these plug-ins that may not one day be supported. Another option I looked at was Squarespace and I liked the simplicity of their website building without needing to add several plug-ins to make a halfway decent website, but I was not ready to pay $200 a year for the simple static site that I wanted to build and host. I was not able to find a service that was simple and cheap, so I decided to build this website myself.</p>
+<p>I ended up choosing to use the Flask framework due to its cost (free), ability to quickly create a simple website, and my familiarity with python. I have heard of flask before and knew you used python with it, but due to never looking into it seriously, I thought I could use just python and flask to create the website. Once I started creating the site and diving into documentation, I found that I needed to utilize html and css to build something a web-browser would be able to serve. So, I started to learn the basics of html and css to create this site.</p>
+<p>I was able to make some static pages but I didn't want to have to write every post to my blog section in html; I wanted to be able to write in something in markdown and translate it into an html page. I found a package called flask-flatpages that does exactly what I wanted to accomplish. It takes markdown files and serves them as html pages to the web-browser. What I needed to solve now was how I was going to host this website. After looking around at some other options, I found that I could use something called flask-freeze. This takes all the resources that I have been using to serve my website on my local development server, and translate them all into a static format that would be simple to host on a web server.</p>
+<p>With this website in its current state, I am able to run a local development server when I am creating a new post or changing some parts of the site, and when I am happy with the look I can run my flask-freeze program that will translate all of those documents into static files that a simple web-server will be able to host. I am happy now with the simple site I have set up, as I am able to use my favorite markdown editor to edit posts, and since I built the thing myself, I will be able to change whatever aspect of it that I want.</p><p>
+		<hr />
+		<hr />
+		<hr />
+	</section>
+	</body>
+</html>
+
